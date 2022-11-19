@@ -1,2 +1,54 @@
-this is test file 
-created
+public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		int sub1,sub2,sub3,sub4;
+		int sum;
+		float avg ;
+         int n;
+         System.out.println("please enter the number of students ");
+         n= input.nextInt();
+		{
+	    for (int i=1;i<=n;i++)
+	    {
+	    	//System.out.println(i);
+	    
+		
+		System.out.println("Please enter mark-1  of student "+i+"");
+
+		 sub1 = input.nextInt();
+		 System.out.println("Please enter mark-2 of student "+i+"");
+
+		 sub2 = input.nextInt();
+		 System.out.println("Please enter mark-3 of student "+i+"");
+
+		 sub3 = input.nextInt();
+		 System.out.println("Please enter mark-4 of student "+i+"");
+		 sub4 = input.nextInt();
+		
+		 sum = sub1+sub2+sub3+sub4;
+		 System.out.println("sum of student "+i+": "+sum);
+		
+		 avg = sum/4;
+		 System.out.println("avg percentage "+i+": "+ avg);
+		
+			if(avg>80)
+			{
+				System.out.println("student got A grade");
+			}
+			else if(avg>70)
+			{
+				System.out.println("student got B grade");
+			}
+			else if(avg>60)
+			{
+				System.out.println("student got C grade");
+			}
+			else
+				System.out.println("student got D grade");
+		}
+		
+	
+		}
